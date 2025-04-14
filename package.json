@@ -1,7 +1,7 @@
 {
-  "name": "fake-twitch-viewers",
+  "name": "twitch-viewbot-detector",
   "version": "1.0.0",
-  "description": "",
+  "description": "Analyzes Twitch viewer/chatter data to detect potential viewbotting.",
   "main": "dist/backend/server.js",
   "scripts": {
     "build:backend": "tsc --project tsconfig.json",

@@ -22,7 +22,8 @@ const progressText = document.getElementById('progress-text') as HTMLSpanElement
 const loadingSpinner = analyzeButton?.querySelector('.loading-spinner') as HTMLElement | null;
 
 // Backend API URL (ensure this is correct)
-const API_BASE_URL = 'http://localhost:3000';
+// const API_BASE_URL = 'http://localhost:3000'; // DEV ONLY
+const API_BASE_URL = window.location.origin; // Dynamically use the current domain (e.g., https://twitch.brckt.me or http://localhost:3000)
 
 // Helper function for formatting numbers
 function numberWithCommas(x: number): string {
