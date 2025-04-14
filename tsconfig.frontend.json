@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    /* Basic Browser Options */
+    "target": "ES2016",            // Target standard JS features
+    "module": "ES2015",            // Output ES Modules for browsers
+    "outDir": "./src/frontend",    // Output JS/map files next to TS
+    "sourceMap": true,            // Generate source maps for debugging
+    "lib": ["DOM", "ES2016"],      // Include DOM and basic ES types
+
+    /* Module Resolution */
+    "moduleResolution": "node",     // Standard resolution often works for frontend
+
+    /* Strictness & Quality */
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+
+    /* Interop */
+    "esModuleInterop": true,
+    "skipLibCheck": true            // Skip checking library types (can help avoid node type issues)
+  },
+  "include": [
+    "src/frontend/**/*.ts"      // Only include frontend TypeScript files
+  ],
+  "exclude": [
+    "node_modules",             // Exclude dependencies
+    "src/backend"               // Exclude backend code
+  ]
+} 

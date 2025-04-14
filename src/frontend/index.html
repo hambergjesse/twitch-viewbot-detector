@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Twitch Viewbot & Legitimacy Checker | Analyze Channel Viewers</title>
+    <meta name="description" content="Analyze Twitch channel viewers and chatters to estimate viewer authenticity and detect potential viewbotting activity using public data and heuristics.">
+    <meta name="keywords" content="twitch, viewbot, viewer bot, legitimacy, checker, analyzer, viewers, chatters, authenticity">
+    
+    <!-- Open Graph Meta Tags (for social sharing) -->
+    <meta property="og:title" content="Twitch Viewbot & Legitimacy Checker">
+    <meta property="og:description" content="Estimate Twitch viewer authenticity and detect potential viewbots.">
+    <meta property="og:type" content="website">
+    <!-- <meta property="og:url" content="YOUR_DEPLOYED_URL_HERE"> --> <!-- Add deployed URL later -->
+    <!-- <meta property="og:image" content="YOUR_PREVIEW_IMAGE_URL_HERE"> --> <!-- Add preview image later -->
+
+    <link rel="stylesheet" href="styles.css">
+    <!-- Link to compiled JS in the same directory -->
+    <script type="module" src="main.js" defer></script>
+</head>
+<body>
+    <header class="app-header">
+        <h1>Twitch Viewbot Detector</h1>
+        <p>Enter a Twitch channel name to analyze its viewer patterns.</p>
+    </header>
+
+    <main class="container">
+        <div class="input-group">
+            <label for="channelName">Twitch Channel Name</label>
+            <input type="text" id="channelName" placeholder="e.g., shroud" required>
+        </div>
+        <button id="analyzeButton">
+            Analyze Channel
+            <span class="loading-spinner" style="display: none;"></span>
+        </button>
+
+        <div id="results">
+            <h3>Analysis Results</h3>
+            <!-- Progress Bar (hidden initially) -->
+            <div id="progress-container" class="progress-container" style="display: none;">
+                <div id="progress-bar" class="progress-bar"></div>
+                <span id="progress-text" class="progress-text">Analyzing...</span>
+            </div>
+            <!-- Results Content -->
+            <div id="results-content">
+                <p>Enter a channel name and click analyze.</p>
+                <!-- Results will be dynamically inserted here -->
+            </div>
+        </div>
+    </main>
+
+    <footer class="app-footer">
+        <p>&copy; 2025 Fake Twitch Viewers Analysis Tool. MVP.</p>
+    </footer>
+
+</body>
+</html> 

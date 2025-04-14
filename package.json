@@ -1,0 +1,35 @@
+{
+  "name": "fake-twitch-viewers",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/backend/server.js",
+  "scripts": {
+    "build:backend": "tsc --project tsconfig.json",
+    "build:frontend": "tsc --project tsconfig.frontend.json",
+    "build": "npm run build:backend && npm run build:frontend",
+    "start": "node dist/backend/server.js",
+    "dev": "nodemon src/backend/server.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/node": "^22.14.1",
+    "@types/node-fetch": "^2.6.12",
+    "@types/tmi.js": "^1.8.6",
+    "nodemon": "^3.1.9",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^4.21.2",
+    "node-fetch": "^2.7.0",
+    "tmi.js": "^1.8.5"
+  }
+}

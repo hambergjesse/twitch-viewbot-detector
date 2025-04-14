@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "ES2016",                       // Target modern JavaScript version
+    "module": "nodenext",                     // Use CommonJS modules for Node.js compatibility
+    "moduleResolution": "nodenext",                 // Changed to nodenext
+    "outDir": "./dist",                       // Output directory for compiled JavaScript
+    "rootDir": "./src",                       // Root directory of source files
+    "strict": true,                           // Enable all strict type-checking options
+    "esModuleInterop": true,                  // Allows default imports from CommonJS modules
+    "skipLibCheck": true,                     // Skip type checking of declaration files
+    "forceConsistentCasingInFileNames": true, // Ensure consistent file naming casing
+    "resolveJsonModule": true                 // Allow importing JSON files
+  },
+  "include": ["src/backend/**/*"],              // Adjusted include to focus on backend for this config
+  "exclude": ["node_modules", "**/*.spec.ts", "src/frontend"] // Exclude node_modules and test files
+} 
